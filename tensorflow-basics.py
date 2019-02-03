@@ -8,4 +8,3 @@ with tf.Session() as sess:
 
 print(res + 88)
 
-tf.constant()
