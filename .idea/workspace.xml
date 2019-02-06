@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c040ca1-c298-40ac-b597-d13ad2eba5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/mnist-softmax.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mnist-nn-model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-neural-network.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic/example-neural-network.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mnist-softmax.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow-basics.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic/tensorflow-basics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic/tf-graphs.py" afterDir="false" />
+    <list default="true" id="9c040ca1-c298-40ac-b597-d13ad2eba5fe" name="Default Changelist" comment="rnn example implemented">
+      <change afterPath="$PROJECT_DIR$/mnist-rnn-example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pos.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +18,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mnist-nn-model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="68" column="57" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="57" />
+            <state relative-caret-position="459">
+              <caret line="55" column="47" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#419#1581#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mnist-rnn-example.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="39" column="51" lean-forward="true" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -54,6 +64,8 @@
         <option value="$PROJECT_DIR$/mnist-softmax.py" />
         <option value="$PROJECT_DIR$/basic/mnist-softmax.py" />
         <option value="$PROJECT_DIR$/mnist-nn-model.py" />
+        <option value="$PROJECT_DIR$/rnn-example.py" />
+        <option value="$PROJECT_DIR$/mnist-rnn-example.py" />
       </list>
     </option>
   </component>
@@ -108,7 +120,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mnist-nn-model">
+  <component name="RunManager" selected="Python.mnist-rnn-example">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="fyp-htr-mail-address" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,28 +143,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="example-neural-network" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="fyp-htr-mail-address" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\APIIT\FYP\Code\fyp-htr-mail-address\basic\example-neural-network.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="mnist-nn-model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="fyp-htr-mail-address" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -167,6 +157,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mnist-nn-model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mnist-rnn-example" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="fyp-htr-mail-address" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mnist-rnn-example.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -243,11 +255,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mnist-rnn-example" />
         <item itemvalue="Python.mnist-nn-model" />
         <item itemvalue="Python.mnist-softmax" />
         <item itemvalue="Python.tf-graphs" />
         <item itemvalue="Python.tensorflow-basics" />
-        <item itemvalue="Python.example-neural-network" />
       </list>
     </recent_temporary>
   </component>
@@ -278,6 +290,8 @@
       <workItem from="1549197360836" duration="3245000" />
       <workItem from="1549334337878" duration="9721000" />
       <workItem from="1549369518099" duration="987000" />
+      <workItem from="1549374806725" duration="659000" />
+      <workItem from="1549421330407" duration="5785000" />
     </task>
     <task id="LOCAL-00001" summary="tensorflow basics &amp; mnist basic">
       <created>1549173438170</created>
@@ -290,7 +304,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28576000" />
+    <option name="totallyTimeSpent" value="35020000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -304,7 +318,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496" visible="true" weight="0.16666667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496" visible="true" weight="0.16666667" />
       <window_info id="Structure" order="1" sideWeight="0.504" side_tool="true" weight="0.16666667" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -319,7 +333,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32993197" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.57482994" />
+      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.57482994" />
       <window_info anchor="bottom" id="SciView" order="13" weight="0.50680274" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -336,13 +350,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="tensorflow basics &amp; mnist basic" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../address-find/src/Model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../address-find/src/Model.py" />
     <entry file="file://$PROJECT_DIR$/basic/example-neural-network.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
@@ -379,8 +387,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mnist-nn-model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="68" column="57" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="57" />
+        <state relative-caret-position="51">
+          <caret line="55" column="47" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#419#1581#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnist-rnn-example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
