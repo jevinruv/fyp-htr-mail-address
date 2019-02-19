@@ -2,7 +2,7 @@ import tensorflow as tf
 from tensorflow.python.ops import rnn, rnn_cell
 from tensorflow.examples.tutorials.mnist import input_data
 
-mnist = input_data.read_data_sets("mnist_data/", one_hot=True)
+mnist = input_data.read_data_sets("./datasets/mnist_data/", one_hot=True)
 
 n_epochs = 3
 n_classes = 10
