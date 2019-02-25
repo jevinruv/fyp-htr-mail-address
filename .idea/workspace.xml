@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffbdc448-77b8-4da0-b9e8-ef1598f2eb91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/keras-recognition/mnist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keras-recognition/CNNModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keras-recognition/DataLoader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ImagePreProcess.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mnist-rnn-example.py" beforeDir="false" afterPath="$PROJECT_DIR$/mnist-rnn-example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keras-recognition/mnist_num_reader.h5" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,38 +18,53 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/fyp_htr_mail_address$mnist_cnn_example.coverage" NAME="mnist-cnn-example Coverage Results" MODIFIED="1549635542570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fyp_htr_mail_address$CatsVsDogsRecognition.coverage" NAME="CatsVsDogsRecognition Coverage Results" MODIFIED="1550555442080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/keras-recognition" />
+    <SUITE FILE_PATH="coverage/fyp_htr_mail_address$CNNModel.coverage" NAME="CNNModel Coverage Results" MODIFIED="1550633863063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/keras-recognition" />
+    <SUITE FILE_PATH="coverage/fyp_htr_mail_address$ImagePreProcess.coverage" NAME="ImagePreProcess Coverage Results" MODIFIED="1550851395525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
     <SUITE FILE_PATH="coverage/fyp_htr_mail_address$mnist_rnn_example.coverage" NAME="mnist-rnn-example Coverage Results" MODIFIED="1550475760452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fyp_htr_mail_address$CatsVsDogsExample.coverage" NAME="CatsVsDogsExample Coverage Results" MODIFIED="1549854228705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fyp_htr_mail_address$cats_vs_dogs_recognition.coverage" NAME="cats-vs-dogs-recognition Coverage Results" MODIFIED="1549768029735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fyp_htr_mail_address$cats_vs_dogs_main.coverage" NAME="cats-vs-dogs-main Coverage Results" MODIFIED="1549768719191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fyp_htr_mail_address$CatsVsDogsExample__1_.coverage" NAME="CatsVsDogsExample (1) Coverage Results" MODIFIED="1549855160252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tf-learn-recognition" />
+    <SUITE FILE_PATH="coverage/fyp_htr_mail_address$DataLoader.coverage" NAME="DataLoader Coverage Results" MODIFIED="1550638116039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/keras-recognition" />
+    <SUITE FILE_PATH="coverage/fyp_htr_mail_address$test.coverage" NAME="test Coverage Results" MODIFIED="1550814912783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fyp_htr_mail_address$mnist.coverage" NAME="mnist Coverage Results" MODIFIED="1550512612777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/keras-recognition" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/keras-recognition/mnist.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pure-tensorflow/mnist-cnn-example.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="578">
+              <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#294#394#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tf-learn-recognition/CatsVsDogsExample.py">
+        <entry file="file://$PROJECT_DIR$/src/Model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="288">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
-                <element signature="e#781#983#0" />
-                <element signature="e#1026#1533#0" />
-                <element signature="e#1575#2034#0" />
-                <element signature="e#2079#3097#0" />
-                <element signature="e#3830#4529#0" />
+                <element signature="e#784#1693#0" />
+                <element signature="e#1627#1870#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ImagePreProcess.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,6 +82,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>epoch</find>
+      <find>x_train</find>
+      <find>resi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -80,14 +100,20 @@
         <option value="$PROJECT_DIR$/mnist-cnn-example.py" />
         <option value="$PROJECT_DIR$/mnist-rnn-example.py" />
         <option value="$PROJECT_DIR$/keras-recognition/mnist.py" />
+        <option value="$PROJECT_DIR$/keras-recognition/CatsVsDogsRecognition.py" />
+        <option value="$PROJECT_DIR$/keras-recognition/DataLoader.py" />
+        <option value="$PROJECT_DIR$/keras-recognition/CNNModel.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/code/ImagePreProcess.py" />
+        <option value="$PROJECT_DIR$/code/Model.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="207" />
-    <option name="y" value="-18" />
-    <option name="width" value="1026" />
-    <option name="height" value="546" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-243" />
+    <option name="y" value="-1080" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -107,12 +133,7 @@
             <path>
               <item name="fyp-htr-mail-address" type="b2602c69:ProjectViewProjectNode" />
               <item name="fyp-htr-mail-address" type="462c0819:PsiDirectoryNode" />
-              <item name="keras-recognition" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fyp-htr-mail-address" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fyp-htr-mail-address" type="462c0819:PsiDirectoryNode" />
-              <item name="tf-learn-recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -123,13 +144,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SimpleHTR_init" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\APIIT\FYP\Code\fyp-htr-mail-address\code" />
+      <recent name="D:\APIIT\FYP\Code\fyp-htr-mail-address" />
+      <recent name="D:\APIIT\FYP\Code\fyp-htr-mail-address\pure-tensorflow" />
       <recent name="D:\APIIT\FYP\Code\fyp-htr-mail-address\tf-learn-recognition" />
     </key>
   </component>
@@ -145,96 +169,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mnist">
-    <configuration name="CatsVsDogsExample (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="fyp-htr-mail-address" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tf-learn-recognition" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tf-learn-recognition/CatsVsDogsExample.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="CatsVsDogsExample" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="fyp-htr-mail-address" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\APIIT\FYP\Code\fyp-htr-mail-address\tf-learn-recognition\CatsVsDogsExample.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="cats-vs-dogs-main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="fyp-htr-mail-address" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cats-vs-dogs-main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="mnist-rnn-example" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="fyp-htr-mail-address" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\APIIT\FYP\Code\fyp-htr-mail-address\pure-tensorflow\mnist-rnn-example.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="mnist" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.ImagePreProcess">
+    <configuration name="CNNModel" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="fyp-htr-mail-address" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -247,7 +183,95 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keras-recognition/mnist.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keras-recognition/CNNModel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CatsVsDogsRecognition" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="fyp-htr-mail-address" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/keras-recognition" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\APIIT\FYP\Code\fyp-htr-mail-address\keras-recognition\DataLoader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DataLoader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="fyp-htr-mail-address" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/keras-recognition" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keras-recognition/DataLoader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ImagePreProcess" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="fyp-htr-mail-address" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/ImagePreProcess.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="fyp-htr-mail-address" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -258,11 +282,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.mnist" />
-        <item itemvalue="Python.mnist-rnn-example" />
-        <item itemvalue="Python.CatsVsDogsExample (1)" />
-        <item itemvalue="Python.CatsVsDogsExample" />
-        <item itemvalue="Python.cats-vs-dogs-main" />
+        <item itemvalue="Python.ImagePreProcess" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.DataLoader" />
+        <item itemvalue="Python.CNNModel" />
+        <item itemvalue="Python.CatsVsDogsRecognition" />
       </list>
     </recent_temporary>
   </component>
@@ -283,23 +307,31 @@
       <workItem from="1550456908061" duration="1962000" />
       <workItem from="1550458997908" duration="2853000" />
       <workItem from="1550475437375" duration="9876000" />
-      <workItem from="1550544583379" duration="326000" />
+      <workItem from="1550544583379" duration="15136000" />
+      <workItem from="1550718502267" duration="4934000" />
+      <workItem from="1550737666323" duration="3816000" />
+      <workItem from="1550805588699" duration="6489000" />
+      <workItem from="1550824860399" duration="3034000" />
+      <workItem from="1550846626421" duration="591000" />
+      <workItem from="1550850778475" duration="2010000" />
+      <workItem from="1550890462336" duration="2106000" />
+      <workItem from="1550976481635" duration="1195000" />
+      <workItem from="1551070646906" duration="2143000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53400000" />
+    <option name="totallyTimeSpent" value="94528000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-241" y="-1080" width="781" height="830" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70238096" visible="true" weight="0.2322239" />
-      <window_info id="Structure" order="1" sideWeight="0.29761904" side_tool="true" visible="true" weight="0.2322239" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.68740743" visible="true" weight="0.40638003" />
+      <window_info id="Structure" order="1" sideWeight="0.3125926" side_tool="true" weight="0.3744799" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4217687" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32993197" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34013605" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38265306" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -308,7 +340,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32993197" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32993197" />
-      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32993197" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -334,7 +366,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cats-vs-dogs-main.py" />
-    <entry file="file://$PROJECT_DIR$/mnist-nn-model.py">
+    <entry file="file://$PROJECT_DIR$/pure-tensorflow/mnist-nn-model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
@@ -344,7 +376,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mnist-rnn-example.py">
+    <entry file="file://$PROJECT_DIR$/pure-tensorflow/mnist-rnn-example.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
@@ -356,36 +388,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mnist-cnn-example.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/random.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="12699">
+          <caret line="755" selection-start-line="755" selection-end-line="755" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/keras-recognition/mnist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="476">
+          <caret line="28" column="107" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="107" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#1803#1997#0" />
+            <element signature="e#2027#2120#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tf-learn-recognition/CatsVsDogsExample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="731">
+          <caret line="117" column="34" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="34" />
           <folding>
+            <element signature="e#0#14#0" expanded="true" />
             <element signature="e#781#983#0" />
             <element signature="e#1026#1533#0" />
             <element signature="e#1575#2034#0" />
             <element signature="e#2079#3097#0" />
-            <element signature="e#3830#4529#0" />
+            <element signature="e#3158#3794#0" />
+            <element signature="e#4559#5236#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/example-neural-network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/mnist-softmax.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/tensorflow-basics.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/tf-graphs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras-recognition/CNNModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras-recognition/DataLoader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="50" column="36" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/pure-tensorflow/mnist-cnn-example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#294#394#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#784#1693#0" />
+            <element signature="e#1627#1870#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ImagePreProcess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
